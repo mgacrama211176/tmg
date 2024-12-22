@@ -16,6 +16,28 @@ export default {
       fontFamily: {
         lato: ["var(--font-lato)"],
       },
+      backdropBlur: {
+        "350": "350px",
+      },
+      keyframes: {
+        dashedLine: {
+          "0%": {
+            backgroundImage:
+              "linear-gradient(to right, #56BD39 50%, transparent 50%)",
+            backgroundSize: "20px 2px",
+            backgroundPosition: "right",
+          },
+          "100%": {
+            backgroundImage:
+              "linear-gradient(to right, #56BD39 50%, transparent 50%)",
+            backgroundSize: "20px 2px",
+            backgroundPosition: "left",
+          },
+        },
+      },
+      animation: {
+        dashedLine: "dashedLine 0.5s linear",
+      },
     },
   },
   plugins: [],

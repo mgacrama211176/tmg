@@ -25,7 +25,7 @@ const Navigation = (props: Props) => {
   ];
   return (
     <nav className="bg-primary fixed top-5 z-50 w-full px-5">
-      <div className="flex items-center justify-between h-28 bg-tertiary border border-transparent rounded-lg py-2 px-14">
+      <div className="flex items-center justify-between h-24 bg-tertiary border border-transparent rounded-lg px-14">
         <div className="flex items-center">
           <Image
             src="/Logo.png"
@@ -52,7 +52,7 @@ const Navigation = (props: Props) => {
               <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-secondary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
             </Link>
           ))}
-          <button className="bg-[#67B044] text-white px-8 py-2 rounded-xl hover:bg-[#5a9a3a] font-bold">
+          <button className="bg-secondary text-white px-8 py-2 rounded-xl hover:opacity-80 font-bold">
             APPLY
           </button>
         </div>
