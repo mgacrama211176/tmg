@@ -7,7 +7,7 @@ export default function Home() {
       <Navigation />
       <main className="relative px-5 w-full">
         <Hero />
-        <Steps />
+        {/* <Steps /> */}
       </main>
     </div>
   );

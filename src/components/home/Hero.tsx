@@ -6,23 +6,24 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <section className="relative h-fit lg:h-auto w-full bg-[#2D3259] border border-transparent rounded-lg mt-32 overflow-hidden">
+    <section className="h-fit lg:h-auto w-full bg-[#2d32595f] border border-transparent rounded-lg mt-32 overflow-hidden">
+      <BackgroundGradient />
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col lg:flex-row justify-between items-center max-w-[1440px] mx-auto">
+      <div className="relative z-10 flex flex-col lg:flex-row justify-between items-center max-w-[1440px] mx-auto h-[700px]">
         {/* Hero Text Content */}
-        <HeroContent />
+        {/* <HeroContent /> */}
 
         {/* Hero Images */}
-        <HeroImages />
+        {/* <HeroImages /> */}
       </div>
     </section>
   );
 };
 
 const BackgroundGradient = () => (
-  <div className="absolute -right-[0px] top-[40%] w-[768px] h-[672px] translate-y-[-50%] -z-10">
+  <div className="absolute right-[50px] top-[40%] w-[600px] h-[672px] translate-y-[-50%] z-0">
     <div
-      className="w-full h-full rounded-full blur-[200px] opacity-100"
+      className="w-full h-full rounded-full blur-[100px] opacity-100"
       style={{
         background: "linear-gradient(133.13deg, #47BE26 40%, #1158DD 80%)",
         transform: "rotate(180deg)",
@@ -68,7 +69,6 @@ const HeroContent = () => (
 
 const HeroImages = () => (
   <div className="relative w-full lg:w-auto h-[500px] lg:h-auto items-end justify-center lg:justify-end hidden lg:flex">
-    <BackgroundGradient />
     <div className="relative">
       {/* Main Agent Image */}
       <div className="relative z-20">
