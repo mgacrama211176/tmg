@@ -3,6 +3,8 @@ import Hero from "@/components/home/Hero";
 import Steps from "@/components/home/Steps";
 import Image from "next/image";
 import Link from "next/link";
+import WhatWedo from "@/components/home/WhatWedo";
+
 export default function Home() {
   return (
     <div className="relative">
@@ -85,6 +87,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* What We do! */}
+        <WhatWedo />
       </main>
     </div>
   );

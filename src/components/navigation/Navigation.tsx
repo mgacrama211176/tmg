@@ -28,7 +28,7 @@ const Navigation = (props: Props) => {
   ];
 
   return (
-    <nav className="bg-primary/10 fixed top-5 z-50 h-full w-full px-5">
+    <nav className="bg-primary/10 fixed top-5 z-20 w-full px-5">
       <div className="flex items-center justify-between h-24 bg-tertiary border border-transparent rounded-lg px-7">
         <div className="flex items-center w-32">
           <Image
