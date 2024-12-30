@@ -19,9 +19,9 @@ const WhatWedo = (props: Props) => {
       </div>
       <div className="flex flex-col items-center">
         <div>
-          <Image src="/whatWeDo.svg" alt="what we do" width={875} height={0} />
+          <Image src="/whatWeDo.svg" alt="what we do" width={700} height={0} />
         </div>
-        <div className="flex flex-wrap justify-center items-center w-1/2 gap-10 mt-10 bg-red-500">
+        <div className="flex flex-wrap justify-center items-center w-1/2 gap-10 mt-10 ">
           {CardDetails.map((card, index) => (
             <div
               key={index}
