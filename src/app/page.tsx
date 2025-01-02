@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import WhatWedo from "@/components/home/WhatWedo";
 import ContactUs from "@/components/contactUs/ContactUs";
+import ApplicantForm from "@/components/applicantsForm/ApplicantForm";
 
 export default function Home() {
   return (
@@ -23,6 +24,9 @@ export default function Home() {
         {/* Contact Us */}
       </main>
       <ContactUs />
+
+      {/* Applicant Form */}
+      <ApplicantForm />
     </div>
   );
 }
