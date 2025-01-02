@@ -40,6 +40,7 @@ async function getApplicants() {
 }
 
 async function createApplicant(formData: any) {
+  console.log(formData);
   const query = `
     mutation ($itemName: String!, $columnValues: JSON!) {
       create_item (
@@ -54,11 +55,12 @@ async function createApplicant(formData: any) {
   `;
 
   const columnValues = {
-    status: { index: 1 }, // "In Review" status
+    status: { index: 5 }, // "Default status
     short_text6: formData.address,
     short_text: formData.fullName,
     short_text60: formData.email,
     phone: { phone: formData.phone, countryShortName: "PH" },
+    CV: formData.CV,
     // Add other fields as needed
   };
 
@@ -71,7 +73,7 @@ async function createApplicant(formData: any) {
     body: JSON.stringify({
       query,
       variables: {
-        itemName: "New Application",
+        itemName: "Incoming form answer",
         columnValues: JSON.stringify(columnValues),
       },
     }),
